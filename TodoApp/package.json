@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "A simple To-Do list web application.",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required' && exit 0", 
+    "start": "http-server . -p 8080", 
+    "test": "echo 'Running tests...' && exit 0"
+  },
+  "author": "Jefrin Peter",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "keywords": [
+    "todo",
+    "web",
+    "application"
+  ]
+}
