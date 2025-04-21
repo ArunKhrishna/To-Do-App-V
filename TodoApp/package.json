@@ -4,8 +4,8 @@
   "description": "A simple To-Do list web application.",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'No build step required' && exit 0", 
-    "start": "http-server . -p 8080", 
+    "build": "echo 'No build step required' && exit 0",
+    "start": "http-server . -p $PORT",
     "test": "echo 'Running tests...' && exit 0"
   },
   "author": "Jefrin Peter",

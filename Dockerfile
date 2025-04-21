@@ -8,11 +8,11 @@ WORKDIR /app
 COPY TodoApp/package*.json ./
 RUN npm install
 
-# Copy the rest of the app
+# Copy the rest of the application
 COPY TodoApp/ .
 
-# Expose the port
-EXPOSE 3000
+# Expose port (Render uses dynamic port assignment, but this is for local testing)
+EXPOSE 8080
 
-# Start the app on port 3000
-CMD ["npm", "start", "--", "--port", "3000"]
+# Start the app - Render sets $PORT, which your app will now use
+CMD ["npm", "start"]
